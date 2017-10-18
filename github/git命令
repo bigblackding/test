@@ -1,0 +1,26 @@
+git remote -v 				查看这个仓库所对应的远程仓库
+git remote add  [名字] [url]   		将本地仓库增加到远程仓库,并命名
+*远程仓库的名字必须和本地仓库的名字一致*
+
+git push [仓库名字] [branch(分支)]       将本地的提交推送到远程仓库
+git pull [仓库名字] [branch(分支)]       将远程仓库的提交拉回到本地
+
+
+
+git clone [url]     			将远程仓库的内容克隆到本地
+
+
+git init 				创建本地仓库(会自动把本地仓库和远程仓库建立关联关系)
+
+git add   				将修改提交到缓冲区(.表示全部提交)
+git common -m "说明"			把变更从缓冲区提交到仓库,并添加变更说明
+git common -a -m "说明" 		直接提交(前提是远程仓库有同名文件或者历史版本)
+
+git config --list 			查看用户名和用户email
+git status 				查看仓库状态
+git log 				查看本地的提交日志,黄色文字问版本哈西值
+git show [哈希值]			查看最后一次的修改内容(红色是删除的,绿色是添加的)
+
+
+
+GitHub 中仓库里settings里的GitHub Pages功能可以发布一个网页    source 下的NONE切换为master branch
