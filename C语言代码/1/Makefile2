@@ -1,0 +1,12 @@
+CC:=gcc
+
+main : main.o func.o sort.o
+	$(CC) -o main main.o func.o sort.o
+mian.o : main.c
+	$(CC) -c main.c
+func.o : func.c
+	$(CC) -c func.c
+sort.o : sort.c
+	$(CC) -c sort.c
+clean :
+		rm -rf *.o main
